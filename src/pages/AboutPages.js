@@ -51,8 +51,8 @@ const AboutPage = () => {
                   <footer className='blockquote-footer'>
                   Muriel Strode,{' '}
                       <cite title='Source Title'>
-                        "Wind-Wafted Wild Flowers" - The Open Court,
-                        1903
+                        "Furry Friends Pet Supplies" - The Puppy Court,
+                        2018
                       </cite>
                   </footer>
                 </blockquote>
