@@ -31,7 +31,7 @@ const animalsSlice = createSlice({
         [fetchAnimals.fulfilled]: (state, action) => {
             state.isLoading = false;
             state.errMsg = '';
-            state.campsitesArray = mapImageURL(action.payload);
+            state.animalsArray = mapImageURL(action.payload);
         },
         [fetchAnimals.rejected]: (state, action) => {
             state.isLoading = false;

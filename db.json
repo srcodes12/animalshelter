@@ -2,35 +2,35 @@
   "animals": [
     {
       "id": 0,
-      "name": "React Lake Campground",
-      "image": "images/react-lake.jpg",
-      "age": 1233,
-      "featured": false,
-      "description": "Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers."
+      "name": "Max",
+      "image": "images/max.jpg",
+      "age": 2,
+      "featured": true,
+      "description": "Max is a 2-year-old mixed breed dog with a friendly personality. He loves to play fetch and go for walks, and gets along well with other dogs and people. Max is medium-sized, with short black and white fur, and is up-to-date on all his vaccinations."
     },
     {
       "id": 1,
-      "name": "Chrome River Campground",
-      "image": "images/chrome-river.jpg",
-      "age": 877,
-      "featured": false,
-      "description": "Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River."
+      "name": "Rascal",
+      "image": "images/RascalPuppy.jpg",
+      "age": 1,
+      "featured": true,
+      "description": "RascalPuppy is a 1-year-old Jack Russell Terrier with a lot of energy. He loves to run and play, and is always eager to learn new tricks. "
     },
     {
       "id": 2,
-      "name": "Breadcrumb Trail Campground",
-      "image": "images/breadcrumb-trail.jpg",
-      "age": 2901,
-      "featured": false,
-      "description": "Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground."
+      "name": "StarBurst",
+      "image": "images/StarBurst.jpg",
+      "age": 1,
+      "featured": true,
+      "description": "StarBurst is a 1-year-old domestic shorthair cat with a sweet and affectionate personality. "
     },
     {
       "id": 3,
-      "name": "Redux Woods Campground",
-      "image": "images/redux-woods.jpg",
-      "age": 42,
+      "name": "Tabby Cat Joe",
+      "image": "images/TabbyCatJoe.jpg",
+      "age": 3,
       "featured": true,
-      "description": "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+      "description": "TabbyCatJoe is a 3-year-old tabby cat with a mellow personality. He enjoys lounging in the sun and getting pets and scratches from his humans."
     }
   ],
   "comments": [
@@ -229,6 +229,174 @@
     },
     {
       "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42
+    },
+    {
+      "id": 43
+    },
+    {
+      "id": 44
+    },
+    {
+      "id": 45
+    },
+    {
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "id": 49
+    },
+    {
+      "id": 50
+    },
+    {
+      "id": 51
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
+    },
+    {
+      "id": 54
+    },
+    {
+      "id": 55
+    },
+    {
+      "id": 56
+    },
+    {
+      "id": 57
+    },
+    {
+      "id": 58
+    },
+    {
+      "id": 59
+    },
+    {
+      "id": 60
+    },
+    {
+      "id": 61
+    },
+    {
+      "id": 62
+    },
+    {
+      "id": 63
+    },
+    {
+      "id": 64
+    },
+    {
+      "id": 65
+    },
+    {
+      "id": 66
+    },
+    {
+      "id": 67
+    },
+    {
+      "id": 68
+    },
+    {
+      "id": 69
+    },
+    {
+      "id": 70
+    },
+    {
+      "id": 71
+    },
+    {
+      "id": 72
+    },
+    {
+      "id": 73
+    },
+    {
+      "id": 74
+    },
+    {
+      "id": 75
+    },
+    {
+      "id": 76
+    },
+    {
+      "id": 77
+    },
+    {
+      "id": 78
+    },
+    {
+      "id": 79
+    },
+    {
+      "id": 80
+    },
+    {
+      "id": 81
+    },
+    {
+      "id": 82
+    },
+    {
+      "id": 83
+    },
+    {
+      "id": 84
+    },
+    {
+      "id": 85
+    },
+    {
+      "id": 86
+    },
+    {
+      "id": 87
     }
   ],
   "partners": [

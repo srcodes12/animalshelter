@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Col, Row } from "reactstrap";
-import CampsiteCard from "./AnimalCards";
+import AnimalCard from "./AnimalCards";
 import { selectAllanimals } from "./AnimalsSlice";
 import Error from "../../components/Error";
 import Loading from "../../components/Loading";
@@ -34,7 +34,7 @@ const AnimalsList = () => {
       {animals.map((animal) => {
         return (
           <Col md="5" className="m-4" key={animal.id}>
-            <CampsiteCard animal={animal} />
+            <AnimalCard animal={animal} />
           </Col>
         );
       })}

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 
 
-const AnimalCard = ({ animal }) => {
-  const { id, image, name } = animal;
+const AnimalCard = ({ animals }) => {
+  const { id, image, name } = animals;
 
   return (
     <Link to={`${id}`}>
