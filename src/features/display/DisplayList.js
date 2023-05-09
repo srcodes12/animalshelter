@@ -2,8 +2,6 @@ import { useSelector } from "react-redux";
 import { Col, Row } from "react-bootstrap";
 import AnimatedDisplayCard from "./AnimatedDisplayCard";
 import { selectFeaturedAnimals } from "../animals/AnimalsSlice";
-import { selectFeaturedPromotion } from "../promotions/promotionsSlice";
-import { selectFeaturedPartner } from "../partners/partnerSlice";
 import Error from "../../components/Error";
 import Loading from "../../components/Loading";
 
