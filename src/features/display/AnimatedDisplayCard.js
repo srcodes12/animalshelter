@@ -12,31 +12,27 @@ import {
 
 
 
-const AnimatedDisplayCard = ({ item }) => {
-  const { image, name, description } = item;
-  const [toggle, setToggle] = useState(false);
+function AnimatedDisplayCard(args) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+  const [items, setItems] = useState([]);
 
-  const items = [
-    {
-      id: 1,
-      image: {image},
-      altText: {name},
-      caption: {description},
-    },
-    {
-      id: 2,
-      altText: {name},
-      caption: {description},
-    },
-    {
-      id: 3,
-      altText: {name},
-      caption: {description},
-    },
-  ];
-  
+  useEffect(() => {
+    fetch('../../../db.json')
+      .then(response => response.json())
+      .then(data => {
+        const newItems = data.animals.map(animal => {
+          return {
+            src: animal.image,
+            altText: animal.name,
+            caption: animal.description,
+            key: animal.id
+          };
+        });
+        setItems(newItems);
+      });
+  }, []);
+
   const next = () => {
     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
@@ -54,64 +50,46 @@ const AnimatedDisplayCard = ({ item }) => {
     setActiveIndex(newIndex);
   };
 
-  
-  const animatedStyle = useSpring({
-    opacity: toggle ? 1 : 0,
-    transform: toggle? 'scale(1,1)' : 'scale(0,0)',
-    config: { duration: 500 }
-  });
-
-  
-  useEffect(() => {
-    setToggle(true);
-  }, []);
-  
   const slides = items.map((item) => {
     return (
       <CarouselItem
-        className="custom-tag"
-        tag="div"
-        key={item.id}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
+        key={item.src}
       >
+        <img src={item.src} alt={item.altText} />
         <CarouselCaption
-          className="text-danger"
           captionText={item.caption}
           captionHeader={item.caption}
         />
       </CarouselItem>
     );
   });
-  
+
   return (
-    <div>
-      <style>
-        {`.custom-tag {
-              max-width: 100%;
-              height: 500px;
-              background: black;
-            }`}
-      </style>
-      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-        <CarouselIndicators
-          items={items}
-          activeIndex={activeIndex}
-          onClickHandler={goToIndex}
-        />
-        {slides}
-        <CarouselControl
-          direction="prev"
-          directionText="Previous"
-          onClickHandler={previous}
-        />
-        <CarouselControl
-          direction="next"
-          directionText="Next"
-          onClickHandler={next}
-        />
-      </Carousel>
-    </div>
+    <Carousel
+      activeIndex={activeIndex}
+      next={next}
+      previous={previous}
+      {...args}
+    >
+      <CarouselIndicators
+        items={items}
+        activeIndex={activeIndex}
+        onClickHandler={goToIndex}
+      />
+      {slides}
+      <CarouselControl
+        direction="prev"
+        directionText="Previous"
+        onClickHandler={previous}
+      />
+      <CarouselControl
+        direction="next"
+        directionText="Next"
+        onClickHandler={next}
+      />
+    </Carousel>
   );
 }
 
