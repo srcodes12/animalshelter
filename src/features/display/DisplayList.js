@@ -6,35 +6,25 @@ import Error from "../../components/Error";
 import Loading from "../../components/Loading";
 
 const DisplayList = () => {
-  const items = useSelector((state) => [
-    selectFeaturedAnimals(state)
-  ]);
+  const items = useSelector(selectFeaturedAnimals);
 
   console.log("display items", items);
 
   return (
     <>
     <Row>
-      {items.map((item, idx) => {
-        const { featuredItem, isLoading, errMsg } = item;
-        if (isLoading) {
-          return <Loading key={idx} />;
-        }
-        if (errMsg) {
-          return <Error errMsg={errMsg} key={idx} />;
-        }
-        return (
-          featuredItem && (
-            <Col md className="m-1" key={idx}>
-              <AnimatedDisplayCard item={featuredItem} />
-            </Col>
-          )
-        );
-      })}
+      {items.isLoading ? (
+        <Loading />
+      ) : items.errMsg ? (
+        <Error errMsg={items.errMsg} />
+      ) : (
+        <Col xs={12} sm={10} md={8} lg={8} className="mx-auto">
+          <AnimatedDisplayCard items={items.featuredItems}  style={{width: '100%', height: '500px', borderRadius: '15px'}}/>
+        </Col>
+      )}
     </Row>
   
   </>
   );
 };
-
 export default DisplayList;

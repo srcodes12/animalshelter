@@ -8,10 +8,8 @@ const HomePage = () => {
     <Container>
       <SubHeader current='Home' />
       <div class="paws-container">
-  <div class="paw"></div>
-  <div class="paw"></div>
-  <div class="paw"></div>
-</div>
+      <div class="paw"></div>
+    </div>
       <DisplayList />
     </Container>
   );

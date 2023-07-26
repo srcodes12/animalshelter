@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "Max",
-      "image": "images/max.jpg",
+      "image": "maxImg",
       "age": 2,
       "featured": true,
       "description": "Max is a 2-year-old mixed breed dog with a friendly personality. He loves to play fetch and go for walks, and gets along well with other dogs and people. Max is medium-sized, with short black and white fur, and is up-to-date on all his vaccinations."
@@ -11,7 +11,7 @@
     {
       "id": 1,
       "name": "Rascal",
-      "image": "images/RascalPuppy.jpg",
+      "image": "rascalImg",
       "age": 1,
       "featured": true,
       "description": "RascalPuppy is a 1-year-old Jack Russell Terrier with a lot of energy. He loves to run and play, and is always eager to learn new tricks. "
@@ -19,7 +19,7 @@
     {
       "id": 2,
       "name": "StarBurst",
-      "image": "images/StarBurst.jpg",
+      "image": "starBurstImg",
       "age": 1,
       "featured": true,
       "description": "StarBurst is a 1-year-old domestic shorthair cat with a sweet and affectionate personality. "
@@ -27,7 +27,7 @@
     {
       "id": 3,
       "name": "Tabby Cat Joe",
-      "image": "images/TabbyCatJoe.jpg",
+      "image": "tabbyCatJoeImg",
       "age": 3,
       "featured": true,
       "description": "TabbyCatJoe is a 3-year-old tabby cat with a mellow personality. He enjoys lounging in the sun and getting pets and scratches from his humans."
@@ -195,6 +195,153 @@
       "date": "2019-02-18T18:12Z"
     },
     {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42
+    },
+    {
+      "id": 43
+    },
+    {
+      "id": 44
+    },
+    {
+      "id": 45
+    },
+    {
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "id": 49
+    },
+    {
+      "id": 50
+    },
+    {
+      "id": 51
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
+    },
+    {
+      "id": 54
+    },
+    {
+      "id": 55
+    },
+    {
+      "id": 56
+    },
+    {
+      "id": 57
+    },
+    {
+      "id": 58
+    },
+    {
+      "id": 59
+    },
+    {
+      "id": 60
+    },
+    {
+      "id": 61
+    },
+    {
+      "id": 62
+    },
+    {
+      "id": 63
+    },
+    {
+      "id": 64
+    },
+    {
+      "id": 65
+    },
+    {
+      "id": 66
+    },
+    {
+      "id": 67
+    },
+    {
+      "id": 68
+    },
+    {
       "id": 69
     },
     {
@@ -250,6 +397,108 @@
     },
     {
       "id": 87
+    },
+    {
+      "id": 88
+    },
+    {
+      "id": 89
+    },
+    {
+      "id": 90
+    },
+    {
+      "id": 91
+    },
+    {
+      "id": 92
+    },
+    {
+      "id": 93
+    },
+    {
+      "id": 94
+    },
+    {
+      "id": 95
+    },
+    {
+      "id": 96
+    },
+    {
+      "id": 97
+    },
+    {
+      "id": 98
+    },
+    {
+      "id": 99
+    },
+    {
+      "id": 100
+    },
+    {
+      "id": 101
+    },
+    {
+      "id": 102
+    },
+    {
+      "id": 103
+    },
+    {
+      "id": 104
+    },
+    {
+      "id": 105
+    },
+    {
+      "id": 106
+    },
+    {
+      "id": 107
+    },
+    {
+      "id": 108
+    },
+    {
+      "id": 109
+    },
+    {
+      "id": 110
+    },
+    {
+      "id": 111
+    },
+    {
+      "id": 112
+    },
+    {
+      "id": 113
+    },
+    {
+      "id": 114
+    },
+    {
+      "id": 115
+    },
+    {
+      "id": 116
+    },
+    {
+      "id": 117
+    },
+    {
+      "id": 118
+    },
+    {
+      "id": 119
+    },
+    {
+      "id": 120
+    },
+    {
+      "id": 121
     }
   ],
   "partners": [
@@ -286,7 +535,7 @@
     {
       "id": 0,
       "name": "Fido's Fitness & Training Center",
-      "image": "images/fidosfitness&trainingcenter.jpg",
+      "image": "fiestaImg",
       "featured": true,
       "description": "This state-of-the-art pet fitness and training center offers a wide range of fitness programs and training classes for dogs."
     },

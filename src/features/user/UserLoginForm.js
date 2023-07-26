@@ -10,7 +10,6 @@ import {
     Button
 } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import defaultAvatar from '../../app/assets/img/unicorn.png';
 import { validateUserLoginForm } from '../../utils/validateUserLoginForm';
 
 const UserLoginForm = () => {
@@ -23,7 +22,7 @@ const UserLoginForm = () => {
   const handleLogin = (values) => {
     const currentUser = {
     id: Date.now()
-    ,avatar: defaultAvatar,
+    ,//avatar: defaultAvatar,
     username: values.username,
     password: values.password,
   }

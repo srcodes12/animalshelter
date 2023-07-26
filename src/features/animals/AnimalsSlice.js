@@ -54,9 +54,8 @@ export const selectAnimalsById = (id) => (state) => {
 
 export const selectFeaturedAnimals = (state) => {
     return { 
-        featuredItem: state.animals.animalsArray.find((animal) => animal.featured),
+        featuredItems: state.animals.animalsArray.filter((animal) => animal.featured),
         isLoading: state.animals.isLoading,
         errMsg: state.animals.errMsg
-    
-}
+    }
 };

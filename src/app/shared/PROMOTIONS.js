@@ -1,41 +1,38 @@
-import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
-//Photo by Jonny Caspari on Unsplash
-import weedsImg from '../assets/img/weeds.jpg';
-// Photo by LoboStudio Hamburg on Unsplash
-import bootsImg from '../assets/img/boots.jpg';
-// Photo by Jonathan Gallegos on Unsplash
-import asyncImg from '../assets/img/mount-promise.jpg';
+import fiestaImg from '../assets/img/fiestaImg.png';
+import rescueImg from '../assets/img/rescueImg.png';
+import runImg from '../assets/img/runImg.png';
+import adoptionImg from '../assets/img/adoptionImg.png';
 
 export const PROMOTIONS = [
     {
         id: 0,
-        name: 'Mountain Adventure',
-        image: breadCrumbImg,
+        name: 'Furry Friends Fiesta',
+        image: fiestaImg,
         featured: true,
         description:
-            'Book a 5-day mountain trek with a seasoned outdoor guide! Fly fishing equipment and lessons provided.'
+            'Join us for a 5-day event celebrating our furry friends! Enjoy fun activities, learn about our rescue work, and maybe even meet your new best friend.'
     },
     {
         id: 1,
-        name: 'Into The Weeds',
-        image: weedsImg,
+        name: 'Into The Wild Rescue Operations',
+        image: rescueImg,
         featured: false,
         description:
-            '5 days deep in the Redux National Monument, far from the beaten path, with only a reducer in your backpack. Guide provided.'
+            'Take a 5-day deep dive into our rescue operations. Experience the fieldwork, meet the heroes, and learn how you can help.'
     },
     {
         id: 2,
-        name: 'Bootstrap Teardown',
-        image: bootsImg,
+        name: 'Fundraising Fun Run',
+        image: runImg,
         featured: false,
-        description: `In this weekend workshop, we'll rebuild your bootstraps from scratch, so you're ready for next-level excursions.`
+        description: `Join our annual Fun Run! All proceeds go directly to supporting our rescue and rehabilitation efforts.`
     },
     {
         id: 3,
-        name: 'Asynchronous Rendezvous',
-        image: asyncImg,
+        name: 'Adoption Event and Fair',
+        image: adoptionImg,
         featured: false,
         description:
-            'Meet up with your guide at the top of Promise Mountain. Or, try to. Good luck!'
+            'Come to our adoption fair at the heart of the city. Get to know our adorable rescues who are looking for their forever homes!'
     }
 ];

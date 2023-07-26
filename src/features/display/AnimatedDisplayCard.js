@@ -8,7 +8,17 @@ import {
   CarouselCaption,
   Card, CardImg, CardText, CardBody, CardTitle
 } from 'reactstrap';
+import maxImg from '../../app/assets/img/Max.jpg';
+import rascalImg from '../../app/assets/img/RascalPuppy.jpg';
+import starBurstImg from '../../app/assets/img/StarburstCat.jpg';
+import tabbyCatJoeImg from '../../app/assets/img/TabbyCatJoe.jpg';
 
+const imageMap = {
+  maxImg: maxImg,
+  rascalImg: rascalImg,
+  starBurstImg: starBurstImg,
+  tabbyCatJoeImg: tabbyCatJoeImg,
+};
 
 
 
@@ -18,12 +28,12 @@ function AnimatedDisplayCard(args) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('../../../db.json')
+    fetch('http://localhost:3001/animals')
       .then(response => response.json())
       .then(data => {
-        const newItems = data.animals.map(animal => {
+        const newItems = data.map(animal => {
           return {
-            src: animal.image,
+            src: imageMap[animal.image],
             altText: animal.name,
             caption: animal.description,
             key: animal.id
@@ -31,7 +41,7 @@ function AnimatedDisplayCard(args) {
         });
         setItems(newItems);
       });
-  }, []);
+}, []);
 
   const next = () => {
     if (animating) return;
@@ -57,10 +67,9 @@ function AnimatedDisplayCard(args) {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
+        <img src={item.src} alt={item.altText} style={{width: '100%', height: '500px', borderRadius: '15px'}} />
         <CarouselCaption
           captionText={item.caption}
-          captionHeader={item.caption}
         />
       </CarouselItem>
     );
@@ -68,6 +77,7 @@ function AnimatedDisplayCard(args) {
 
   return (
     <Carousel
+      
       activeIndex={activeIndex}
       next={next}
       previous={previous}
